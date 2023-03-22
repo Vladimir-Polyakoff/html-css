@@ -1,0 +1,87 @@
+body {
+    height: 100%;
+} 
+.item {
+padding-block: 10px;
+color: #000;
+width: 100%;
+border: 2px solid #000;
+text-align: center;
+}
+.container {
+    margin-top:20px;
+display: grid;
+/* ********************** количество КОЛОНОК и размер  */
+/* grid-template-columns: 20px 1fr 40%; - 3 колонки в px фракция и %*/
+/* grid-template-columns: repeat(8, 1fr)  - повторить сколько колонок и размер*/
+/* grid-template-columns: repeat(8, 100px 50px)  - повторить сколько колонок и размер ЧЕТНЫЕ 100 нечет 50*/
+grid-template-columns: 1fr 1fr; 
+
+/***************** выравнивание ЭЛЕМЕНТОВ start center end */
+/* justify-content: center;
+align-content: end; */
+
+/* ********** размер для тех строк для кого ЯВНО не заданно */
+/* grid-auto-rows: 100px; */
+/* minmax() для всех свойств ГРИДА где есть размеры елси не задан grid-template-rows ЯВНО*/
+grid-auto-rows: minmax(50px, auto);
+
+
+/**************** выравнивание по оси X - Y елси есть свободное место*/
+/* justify-items: end; */
+/* align-items: end; */
+
+
+
+/* ************************** растояние МЕЖДУ колонок */
+/* grid-column-gap: 10px; */
+
+
+/********************* количество СТРОК */
+/* все как у колонок только по ВЕРТИКАЛИ по оси Y */
+/* grid-template-rows: 100px 50px 100px 35px; */
+/********************* gap для рядов  */
+/* grid-row-gap: 4px; */
+
+/* ОБЩЕЕ свтойство row - column */
+grid-gap: 10px 20px; 
+
+}
+
+.item__3 {
+    /* justify-self: center;
+    align-self: center; */
+
+    /* откуда начинается ПО ОТСТУПАМ (padding) */
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+    grid-column: 1/3;
+    /* grid-row-start: 2;
+    grid-row-end: 5; */
+    grid-row: 1/5;
+}
+
+
+
+/* .container {
+    display: grid;
+    grid-template-areas: 
+    'header header'
+    'sidebar content';
+    gap: 10px;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: 100px 1fr;
+}
+
+.header {
+    grid-area: header;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    align-self: start;
+}
+.content {
+    grid-area: content;
+} */
+

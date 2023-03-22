@@ -1,0 +1,77 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #121212;
+}
+.wave-button
+{
+    position: relative;
+    padding: 20px 50px;
+    display: block;
+    text-transform: uppercase;
+    overflow: hidden;
+    text-decoration: none;
+}
+.wave-button__title
+{
+    position: relative;
+    z-index: 1;
+    font-size: 20px;
+    letter-spacing: 8px;
+    color: #fff;
+}
+.wave-button__wave
+{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 230px;
+    background-color: #6d2eeb;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.2s linear;
+}
+.wave-button__wave::before,
+.wave-button__wave::after
+{
+    content: '';
+    position: absolute;
+    width: 205%;
+    height: 205%;
+    top: 0;
+    left: 50%;
+    transform: translate(-40%, -59%);
+}
+.wave-button__wave::before
+{
+    border-radius: 45%;
+    background-color: rgba(20, 20, 20, 1);
+    animation: wave 5s linear infinite;
+}
+.wave-button__wave::after
+{
+    border-radius: 40%;
+    background-color: rgba(20, 20, 20, 0.5);
+    animation: wave 10s linear infinite;
+}
+@keyframes wave
+{
+    0%
+    {
+        transform: translate(-50%, -59%) rotate(0deg);
+    }
+    100%
+    {
+        transform: translate(-50%, -59%) rotate(150deg);
+    }
+}

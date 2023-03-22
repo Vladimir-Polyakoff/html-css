@@ -1,0 +1,161 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+p
+{
+    font-weight: 300;
+    color: #111;
+}
+.banner
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(img/caminao.jpg);
+    background-size: cover;
+}
+.banner .content
+{
+    max-width: 900px;
+    text-align: center;
+}
+.banner .content h2
+{
+    font-size: 5em;
+    color: #fff;
+}
+.banner .content p
+{
+    font-size: 1em;
+    color: #fff;
+}
+.btn{
+    font-size: 1em;
+    color: #fff;
+    background: orange;
+    border-radius: 15px;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+.btn:hover
+{
+    letter-spacing: 6px;
+    color: #000;
+}
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+header.sticky
+{
+    background: #fff;
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+header .logo
+{
+    color:orange;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+header.sticky .logo
+{
+    color: #111;
+}
+header .logo span
+{
+    color: orange;
+}
+header .navigation
+{
+    position: relative;
+    display: flex;
+}
+
+header .navigation li
+{
+    list-style: none;
+    margin-left: 30px;
+}
+header .navigation li a
+{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300px;
+}
+header.sticky .navigation li a
+{
+    color: #000;
+}
+header .navigation li a:hover
+{
+    color: orange;
+}
+
+section
+{
+    padding: 100px;
+}
+.row
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.row .col50
+{
+    position: relative;
+    width: 48%;
+}
+.title-Text
+{
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+}
+.title-Text span 
+{
+    color: orange;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+.row .col50 .img-Bx
+{
+    position: relative;
+    width: 100%;
+    /* min-height: 300px; */
+    height: 100%;
+}
+.row .col50 .img-Bx img 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

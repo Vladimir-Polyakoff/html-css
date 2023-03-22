@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new web</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Стилист<span>.</span></a>
+        <ul class="navigation">
+            <li><a href="#banner">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#proects">Proects</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+        </ul>
+    </header>
+
+    <section class="banner" id="banner">
+        <div class="content">
+            <h2>Елизавета Чернявская</h2>
+            <p>Самая успешная стилист в Росии в 2022 году по версии журнала "Top Stylist Rus" 
+            </p>
+            <a href="#" class="btn">Our Menu</a>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0)
+        });
+    </script>
+</body>
+
+</html>

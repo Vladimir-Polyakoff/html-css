@@ -1,0 +1,36 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgba(182, 79, 79, 0.649);
+}
+a
+{
+    position: relative;
+    padding: 15px 40px;
+    background: #fff;
+    color: #555;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0% 100%, 10% 48%, 0% 0%);
+}
+a:hover
+{
+    background: rgb(23, 6, 6);
+    color: #fff;
+    letter-spacing: 4px;
+    clip-path: polygon(100% 0%, 90% 49%, 100% 100%, 11% 100%, 0% 50%, 10% 0);
+}

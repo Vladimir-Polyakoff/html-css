@@ -1,0 +1,60 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background: #000;
+}
+section {
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader {
+    position: relative;
+    width: 300px;
+    height: 100px;
+    background: #000;
+    filter: blur(10px) contrast(20);
+}
+.drop1, .drop2 {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.drop1 {
+    background: yellow;
+    left: 20%;
+    animation: anim1 ease-in-out infinite 2.5s;
+}
+.drop2 {
+    background: red;
+    right: 20%;
+    animation: anim2 ease-in-out infinite 2.5s;
+}
+@keyframes anim1 {
+    0% {
+        left: 20%;
+    }
+    50% {
+        left: 45%;
+    }
+    100% {
+        left: 20%;
+    }
+}
+@keyframes anim2 {
+    0% {
+        right: 20%;
+    }
+    50% {
+        right: 45%;
+    }
+    100% {
+        right: 20%;
+    }
+}

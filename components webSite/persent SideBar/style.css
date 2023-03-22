@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wraper {
+    position: relative;
+    display: flex;
+}
+
+.progress {
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+    height: 10px;
+    border-radius: 30px;
+    background: rgb(122, 100, 100);
+}   
+
+.progress__bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: rgba(0, 0, 255, 0.51);
+    border-radius: 30px;
+    transition: 0.2s width;
+}
+
+.nav {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    flex-direction: column;
+    gap: 30px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    background: #FFFFFF;
+    border-right: 1px solid rgb(122, 100, 100);
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nav__link {
+    font-size: 22px;
+    color: rgb(122, 100, 100);
+    text-decoration: none;
+}
+.nav__link.active {
+    color: #FFFFFF;
+    width: 200px;
+    height: 30px;
+    background: rgba(3, 3, 150, 1);
+    padding:5px 20px;
+    border-radius: 10px;
+}
+
+main {
+    overflow-y:scroll;
+    width: 100%;
+    margin-left: 300px;
+}
+/* убрать второй скролл */
+main::-webkit-scrollbar {
+    display: none;
+}
+
+.section {
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+}
+
+.section-1 {
+    background: lemonchiffon;
+}
+.section-2 {
+    background: rgb(205, 255, 209);
+}
+.section-3 {
+    background: rgb(205, 218, 255);
+}
+.section-4 {
+    background: rgb(255, 205, 228);
+}
+.section-5 {
+    background: rgb(255, 223, 205);
+}   

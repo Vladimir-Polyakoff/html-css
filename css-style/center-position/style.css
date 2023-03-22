@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.margin {
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+}
+.margin div:last-child {
+    background: red;
+}
+
+
+.parent {
+    width: 500px;
+    height: 500px;
+    background: #cecece;
+    margin-bottom: 10px;
+}
+
+/* .childe {
+    width: 200px;
+    height: 200px;
+    background: #bc1616;
+    padding: 10px;
+    font-size: 35px;
+} */
+
+/* Сделать круг! */
+.childe {
+    width: 200px;
+    height: 200px;
+    background: #bc1616;
+    clip-path: circle(50%);
+}
+
+/* СПОСОБЫ ОТЦЕНТРОВАТЬ ЭЛЕМЕНТ ВНУТРИ РОДИТЕЛЯ */
+/* спаособ 1 */
+/* .p1 { */
+    /* position: relative; */
+/* } */
+/* .c1 { */
+    /* position: absolute; */
+    /* top:50%; */
+    /* left: 50%;  выравнивает относительно верхнего левого угла */
+    /* transform: translate(-50%, -50%);выровнять относительноего его центра! */
+/* } */
+
+
+/* способ 2 */
+/* .p1 {
+    position: relative;
+}
+.c1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+} */
+
+
+/* способ 3 */
+/* .p1 {
+    position: relative;
+}
+.c1 {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+} */
+
+
+
+/* способ 4 */
+/* .p1 {
+    display: grid; или
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.c1 {
+} */
+
+
+
+/* способ 5 */
+/* .p1 {
+    display: flex; 
+    justify-content: center;
+}
+.c1 {
+    align-self: center; селф выравнивания себя
+} */
+
+
+
+/* способ 6 */
+/* .p1 {
+    dipsplay: grid; или
+    display: flex;
+}
+.c1 {
+    margin: auto;
+} */
+
+
+/* способ 7 */
+/* .p1 {
+    display: grid;
+    place-items: center;
+}
+.c1 {
+} */
+
+
+
+/* способ 8 */
+/* .p1 {
+    display: grid;
+}
+.c1 {
+    align-self: center;
+    justify-self: center;
+} */
+
+
+/* способ 9 */
+/* .p1 {
+    display: grid;
+}
+.c1 {
+   place-self: center;
+} */
+
+
